@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header content">
+            <div class="site_name">
+                <h1>WEBfolio</h1>
+                <h2>Глухов Дмитро</h2>
+            </div> 
+            <div class="nav">
+                <div class="link active">HOme</div>
+                <div onclick="handleButtonClick(work)" class="link">work </div>
+                <div onclick="handleButtonClick(resume)" class="link">resume</div>
+
+            </div>
+        </div>
+    </header>
+    <div class="info content">
+        <img src="img/“.png" alt="">
+        <p class="about">Швидкий сайт -за розумні гроші</p>
+    </div>
+    <div id="work" class="myBtnContainer portfolio content">
+        <div class="portfolio_filters">
+            <buton class="btn active_filter" onclick="filterSelection('all')">all</buton>
+            <buton class="btn " onclick="filterSelection('wordpress')">WordPress</buton>
+            <buton class="btn " onclick="filterSelection('html')">HTML/CSS</buton>
+        </div>
+        <div  class="work_box">
+            <a class="filterDiv wordpress element"><img class="element_img" src="img/j1.jpg" alt=""></a>
+            <a href="https://oleksandr-gluhov.github.io/claymore/" class="filterDiv html element"><img class="element_img" src="img/j2 (2).jpeg" alt=""></a>
+        </div>    
+    </div>
+    <div id="resume" class="resume">
+        <div class="resume_content content">
+            <div class="about_me">
+                <div class="me">
+                    <img src="img/IMG_2087.jpg" alt="">
+                    <div class="my_name"> Глухов Сашько</div>  
+                </div>
+                <p class="my_resume">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="my_skils">
+                <div class="skils">
+                    <h3>My skills</h3>
+                    <div class="skill">
+                        <p class="nameskill" >CSS:</p>
+                        <div class="procent_skill"><div style="width: 70%;" class="prosent"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="nameskill">HTML:</div>
+                        <div class="procent_skill"><div style="width: 50%;" class="prosent"></div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+</html>
